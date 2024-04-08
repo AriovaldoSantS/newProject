@@ -1,0 +1,102 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.product {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    align-items: center;
+    max-width: 80%;
+    gap: 20px;
+
+}
+
+.image {
+    width: 70%;
+    align-content: center;
+}
+
+
+.item {
+    background-color: rgb(236, 236, 236);
+    padding: 20px;
+    border-radius: 20px;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+.title {
+    font-weight: 500;
+    justify-items: center;
+    font-size: large;
+    font-family: 'Open-Sans';
+    color: blue;
+
+}
+
+.price {
+    letter-spacing: 7px;
+    font-size: small;
+}
+
+.btn-add {
+    background-color: black;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 20px;
+    margin-top: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+.cartTab {
+    width: 400px;
+    background-color: #353432;
+    color: white;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    inset: 0 0 0 auto;
+    display: grid;
+    grid-template-rows: 200px 100fr 200px;
+
+}
+
+.titleCart {
+    padding: 100px;
+    margin: 0;
+    font-size: large;
+
+}
+
+.btn {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    height: 50px;
+}
+
+.btn button {
+    background-color: yellow;
+    border: none;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.btn .close {
+    background-color: white;
+}
+
+.item {
+    display: grid;
+    grid-template-columns: 70px 150px 50px 1fr;
+}
+
+.imageSize {
+    width: 50px;
+    display: flex;
+    justify-items: center;
+    justify-content: center;
+}
