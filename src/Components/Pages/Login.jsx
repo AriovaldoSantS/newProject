@@ -1,5 +1,6 @@
 import { useNavigate } from "react-router-dom"
 import { useState } from "react"
+import logo from '../assets/Ativo 1.png'
 
 function Login() {
 
@@ -29,19 +30,23 @@ function Login() {
     }
 
     return (
-        <div>
+        <div className="pageLogin">
 
-            <h1 id="logo">Logo</h1>
+            <div className="logoMaster">
+                <img className="logoMasterImg" src={logo} alt='' />
+                <h1 className="name">Lojas Eletron</h1>
+            </div>
 
-            <label htmlFor=""><input placeholder='Email' type="email" value={email} onChange={handONchange} />
-            </label>
-            {!valid && <p style={{ color: 'red' }}>Por favor, insira um e-mail válido.</p>}
-            <br />
-            <label htmlFor=""><input placeholder="Senha" onChange={({ target: { value } }) => setPassword(value)} type="password" />
-            </label>
-            <br /> <br />
-            <button disabled={!(password.length >= 8) || !(valid)} onClick={handleClick} >Login</button>
-
+            <div className="login">
+                <label htmlFor=""><input placeholder='Email' type="email" value={email} onChange={handONchange} />
+                </label>
+                {!valid && <p style={{ color: 'red' }}>Por favor, insira um e-mail válido.</p>}
+                <br />
+                <label htmlFor=""><input placeholder="Senha" onChange={({ target: { value } }) => setPassword(value)} type="password" />
+                </label>
+                <br /> <br />
+                <button disabled={!(password.length >= 8) || !(valid)} onClick={handleClick} >Login</button>
+            </div>
 
         </div>
     )

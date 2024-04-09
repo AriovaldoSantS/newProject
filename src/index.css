@@ -4,8 +4,32 @@
   font-family: 'Open Sans', sans-serif;
 }
 
+.pageLogin {
+  display: grid;
+  place-items: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 
-body {
-  background-color: #ffffff;
+}
 
+.logoMaster {
+  display: grid;
+  place-items: center;
+}
+
+.logoMasterImg {
+  width: 30%;
+}
+
+.login button {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.login input {
+  width: 200px;
 }

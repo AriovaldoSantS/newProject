@@ -70,15 +70,17 @@ function Home() {
             <NavBar />
             <div className='product' >
                 {data.map(product => (
-                    <div className="item" key={product.id}>
+                    <button className="item" key={product.id}>
                         <img className="image" src={product.image} alt={product.title} />
+
                         <h2 className="title">{product.title}</h2>
+
                         <p className="price">Valor: R${product.price}</p>
 
                         <br />
 
                         <button className="btn-add" onClick={() => addShop(product)}  >Adicionar</button>
-                    </div>
+                    </button>
                 ))}
             </div>
 
